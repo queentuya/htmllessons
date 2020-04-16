@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex Align</title>
+  <style>
+    #container {
+      background: #555;
+      display: flex;
+      flex-wrap: wrap;
+      /* Align items horizontal */
+      justify-content: space-evenly;
+      /*  
+            OPTIONS: (horizontal dimensions)
+            flex-start (align to left)
+            flex-end (align to right)
+            center (align to center)
+            space-between 
+            space-around 
+            space-evenly 
+        */
+        height: 600px;
+        
+        
+        /* Align items vertical (must be height) */
+        align-items: baseline;
+        /*  
+            OPTIONS: (vertical dimensions)
+            flex-start (only on top)
+            flex-end (only on bottom)
+            center  (in center)
+            baseline (like flex-start)
+            stretch (default)
+        */
+        
+        
+        /* Align items vertical where extra space */
+        align-content: space-between;
+        /*  
+            OPTIONS: (used with wrap only to set vertically)
+            flex-start (on top)
+            flex-end (bottom)
+            center (center)
+            space-between
+            space-around
+            stretch
+        */
+    }
+
+    .item-1 {
+      order: 3;
+    }
+
+    .item-2 {
+      /* Align single item vertical */
+      align-self: center;
+      /* 
+            OPTIONS: (just targets whichever is selected)
+            flex-start
+            flex-end 
+            center
+            baseline
+            stretch;
+         */
+      order: 2
+    }
+
+    .item-3 {
+      order: 1;
+    }
+    /* order specifies which order they go in */
+    .item {
+        background: #f4f4f4;
+        border: #ccc solid 1px;
+        text-align: center;
+        padding: 1rem;
+        margin: 0.5rem;
+        flex-basis: 200px;
+      }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="item item-1"><h3>Item 1</h3></div>
+    <div class="item item-2"><h3>Item 2</h3></div>
+    <div class="item item-3"><h3>Item 3</h3></div>
+  </div>
+</body>
+</html>

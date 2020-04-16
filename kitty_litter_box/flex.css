@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+  }
+#navbar {
+    display: flex;
+    line-height: 1.4;
+    justify-content: space-between;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    background: #333;
+    padding: 1rem;
+
+    
+}
+
+    .header-photo {
+      background: #f4f4f4;
+      border: #ccc solid 1px;
+      padding: 1rem;
+      text-align: left;
+      margin: 0.75rem;
+      border-radius: 5px;
+    }
+    .header-name {
+      background: #f4f4f4;
+      border: #ccc solid 1px;
+      padding: 1rem;
+      text-align: left;
+      margin: 0.75rem;
+      border-radius: 5px;
+    }
+    .header-feed {
+      background: #f4f4f4;
+      border: #ccc solid 1px;
+      padding: 1rem;
+      text-align: left;
+      margin: 0.75rem;
+      border-radius: 5px;
+    }
+    .header-settings {
+      background: #f4f4f4;
+      border: #ccc solid 1px;
+      padding: 1rem;
+      text-align: left;
+      margin: 0.75rem;
+      border-radius: 5px;
+    }
+    .header-logout {
+      background: #f4f4f4;
+      border: #ccc solid 1px;
+      padding: 1rem;
+      text-align: left;
+      margin: 0.75rem;
+      border-radius: 5px;
+    }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

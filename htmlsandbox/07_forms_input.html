@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms & Input</title>
+</head>
+<body>
+    <form action="whereyouwantdatatogoto.php">
+        <div>
+  <!-- text box -->
+  
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" value="John Doe">
+            <!-- use value as above to give example that has to be deleted -->
+        <!-- for and id must be same -->
+        </div>
+        <div>
+    <!-- email -->
+            
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter email here">
+            <!-- placeholder gives direction but goes away -->
+        </div>
+        <div>
+    <!-- message box -->
+    
+            <label for="message">Message</label><br>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+    <!-- select options -->
+            
+            <label for="sex">Sex</label>
+            <!-- add "selected" to preselect one -->
+            <select name="sex" id="sex">
+                <option value="male">Male</option>
+                <option value="female" selected>Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+    <!-- number selection -->
+            
+            <label for="age">Age</label><br>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+    <!-- date selection -->
+            
+            <label for="birthday">Birthdate</label><br>
+            <input type="date" name="birthday" id="birthdate">
+        </div>
+        <div>
+    <!-- make one selection from choices "radio" -->
+            
+            <label for="membership">Membership</label>
+            <input type="radio" name="membership" value="simple" id="membership"> Simple
+            <input type="radio" name="membership" value="standard" id="membership"checked> Standard
+            <input type="radio" name="membership" value="super" id="membership"> Super
+        <!-- add "checked" to preselect one choice -->
+        </div>
+        <div>
+    <!-- make selections from choices  "checkbox"-->
+            
+            <label for="membership">I Like...</label>
+            <input type="checkbox" name="likes" value="bike" id="likes"> Bike
+            <input type="checkbox" name="likes" value="car" id="likes"> Car
+            <input type="checkbox" name="likes" value="boat" id="likes"> Boat
+        <!-- add "checked" to preselect one choice
+            use Window button and D to toggle one term off and on -->
+        </div>
+        
+    <!-- how to submit form -->
+        <!-- can create submit in two ways -->
+        <input type="submit" value="Submit">
+        <!-- or -->
+        <!-- <button type="submit">Submit</button> -->
+    
+    <!-- reset form -->
+        <button type="reset">Reset</button>
+    
+    
+    
+    
+    <!-- use Window button and D to toggle one term off and on -->
+    </form>
+
+</body>
+</html>

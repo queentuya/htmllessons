@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex Basics</title>
+  <style>
+    #container { 
+      display: flex;
+      flex-direction: row;
+     /* can also do flex-direction: row-reverse; and it puts them on 
+     upper right corner in rev order */
+      /* flex-direction: column;  */
+      flex-wrap: wrap;
+      /* max of 12 on a line and will either put on another line or scroll bar */
+       /* flex-flow: row nowrap;  
+       above is same as combining two above into one command*/
+    } 
+
+    .item {
+      background: #f4f4f4;
+      border: #ccc solid 1px;
+      padding: 1rem;
+      text-align: center;
+      margin: 0.75rem; 
+      flex: 1;
+    /* above makes them in equal sizes */
+    }
+/* below makes first one in larger (2x) box */
+    .item:first-child {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="item"><h3>Item 1</h3></div>
+    <div class="item"><h3>Item 2</h3></div>
+    <div class="item"><h3>Item 3</h3></div>
+     <div class="item"><h3>Item 3</h3></div> 
+    <div class="item"><h3>Item 3</h3></div>
+    <div class="item"><h3>Item 3</h3></div>
+    <div class="item"><h3>Item 3</h3></div>
+    <div class="item"><h3>Item 3</h3></div>
+    <div class="item"><h3>Item 3</h3></div>
+    <div class="item"><h3>Item 3</h3></div>
+    <div class="item"><h3>Item 3</h3></div>
+    <div class="item"><h3>Item 3</h3></div>
+    <div class="item"><h3>Item 3</h3></div>
+    <div class="item"><h3>Item 3</h3></div>
+    <div class="item"><h3>Item 3</h3></div>
+    <div class="item"><h3>Item 3</h3></div>
+  </div>
+</body>
+</html>

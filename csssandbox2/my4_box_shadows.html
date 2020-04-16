@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadows</title>
+<style>
+    .container {
+        display: flex;
+    }
+    .box {
+        padding: 1rem;
+        margin: 1rem;
+        background: coral;
+        color: #fff;
+    /* to make shadows on boxes
+    offset-x | offset-y | color */
+        box-shadow: 10px 10px teal;
+        /* to make blur radius on boxes
+    offset-x | offset-y | blur-radius | color */
+    box-shadow: 10px 10px 20px teal;
+    /* to make shadows on upper and left sides
+    box-shadow: -5px -5px 20px teal; */
+    /* to make very discrete shadow
+    box-shadow: 3px 3px 10px 1px rgba(0,0,0,0.3);
+    1px is "spread-radius" and 0.3 is very translucent*/
+    /* inset shadow
+    box-shadow: inset 3px 3px teal; */
+    /* can do multiple shadows
+    box-shadow: 3px 3px teal, -3px -3px olive; */
+    
+    }
+
+
+
+
+</style>
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Aspernatur, aperiam!</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Aspernatur, aperiam!</p>
+        </div>
+        <div class="box">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Aspernatur, aperiam!</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+</html>
